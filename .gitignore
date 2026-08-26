@@ -1,0 +1,17 @@
+bin/
+obj/
+.vs/
+*.suo
+*.user
+[Bb]in/
+[Oo]bj/
+*.userprefs
+*.pidb
+*.ncb
+*.aps
+*.cache
+*.ilk
+*.log
+*.pdb
+Thumbs.db
+Desktop.ini

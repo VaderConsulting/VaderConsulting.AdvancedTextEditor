@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD63D013-08FA-422D-918E-BE6140062E29}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VaderConsulting</RootNamespace>
+    <AssemblyName>VaderConsulting.AdvancedTextEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dlgFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgFind.Designer.cs">
+      <DependentUpon>dlgFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AdvancedTextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdvancedTextEditor.Designer.cs">
+      <DependentUpon>AdvancedTextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VaderConsulting.TextRuler\VaderConsulting.TextRuler.csproj">
+      <Project>{96072c31-a9ee-47df-aa5c-a293935876c6}</Project>
+      <Name>VaderConsulting.TextRuler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdvancedTextEditor.resx">
+      <DependentUpon>AdvancedTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgFind.resx">
+      <DependentUpon>dlgFind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAlignCenter.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAlignLeft.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAlignRight.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBold.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBulletedList.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCopy.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCut.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnItalic.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnJustify.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNew.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNumberedList.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnOpen.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPaste.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPrint.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPrintPreview.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRedo.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSave.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnStrikeThrough.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnUnderline.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnUndo.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuCopy.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuCut.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuFind.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuFont.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuHighlightColor.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuInsertDateTime.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuInsertPicture.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuNew.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuOpen.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuPaste.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuPrint.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuPrintPreview.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuRedo.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuSave.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuTextColor.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuUndo.Image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
