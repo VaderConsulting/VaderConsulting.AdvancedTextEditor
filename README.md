@@ -14,6 +14,10 @@ C# .NET 3.5 WinForms UserControl: Word-like rich-text editor with ruler, formatt
 
 Open `VaderConsulting.AdvancedTextEditor.csproj` in Visual Studio 2013 or later (ToolsVersion 12.0). A full build also needs the sibling projects `VaderConsulting.TextRuler` and `VaderConsulting.ExtendedRichTextBox` (referenced from the designer / project reference paths).
 
+## Requirements
+
+- Visual Studio 2013 or later, .NET Framework 3.5
+
 ## Attribution and provenance
 
 Working copy from Dave Robinson's OneDrive Historical Dev folder `VaderConsulting.AdvancedTextEditor`. Assembly copyright © 2015; namespace `VaderConsulting`.
