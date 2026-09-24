@@ -20,7 +20,7 @@ Open `VaderConsulting.AdvancedTextEditor.csproj` in Visual Studio 2013 or later 
 
 ## Attribution and provenance
 
-Working copy from Dave Robinson's OneDrive Historical Dev folder `VaderConsulting.AdvancedTextEditor`. Assembly copyright © 2015; namespace `VaderConsulting`.
+Working copy from my Historical Dev folder `VaderConsulting.AdvancedTextEditor`. Assembly copyright © 2015; namespace `VaderConsulting`.
 
 ## License
 
